@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luis Heli Mozart | Frontend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: rgba(255,255,255,0.06);
+      --border: rgba(255,255,255,0.12);
+      --primary: #7cf5ff;
+      --secondary: #9b7cff;
+      --text: #e6e9f0;
+      --muted: #9aa4bf;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1a1f3a, transparent),
+                  radial-gradient(800px 400px at 90% 10%, #1b3a3a, transparent),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 24px 48px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      margin: 0;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      max-width: 720px;
+      margin: 20px auto 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 96px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    section {
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 1.25rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
+
+    .stack span {
+      display: inline-block;
+      padding: 8px 14px;
+      margin: 6px 6px 0 0;
+      border-radius: 999px;
+      background: rgba(124,245,255,0.12);
+      border: 1px solid rgba(124,245,255,0.25);
+      font-size: 0.85rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 18px;
+    }
+
+    .job h3 {
+      margin: 0 0 6px;
+      font-size: 1.05rem;
+    }
+
+    .job span {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 16px 64px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .photo-wrapper {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      box-shadow: 0 0 40px rgba(124,245,255,0.45);
+    }
+
+    .photo-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.25);
+      background: #111;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:24px;">
+      <div class="photo-wrapper">
+        <!-- Coloque sua foto aqui -->
+        <img src="1753063033561.png" alt="Foto de Luis Heli Mozart" />
+      </div>
+      <div>
+        <h1>Luis Heli Mozart</h1>
+        <p>
+          Engenheiro Mecânico | Analista de Investimentos | Programador & IA<br />
+          Atualmente cursando <strong>Engenharia Mecânica</strong> com foco em <strong>IA, automação e aplicações computacionais</strong>, atuando na interseção entre tecnologia, finanças e indústria.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Perfil</h2>
+      <p>
+        Profissional multidisciplinar com forte base analítica e técnica. Atuo unindo programação, inteligência artificial, engenharia e mercado financeiro para criar soluções práticas e eficientes.
+      </p>
+      <p>
+        Experiência sólida em análise de investimentos em mesa proprietária, desenvolvimento frontend para aplicações técnicas e uso de IA aplicada tanto em finanças quanto em simulações e problemas de engenharia.
+      </p>
+      <p>
+        Transformo código em soluções reais — da bolsa à indústria.
+      </p>
+    </section>
+
+    <section>
+      <h2>Tecnologias</h2>
+      <div class="stack">
+        <span>HTML5</span>
+        <span>CSS3 / SCSS</span>
+        <span>JavaScript (ES6+)</span>
+        <span>TypeScript</span>
+        <span>React</span>
+        <span>Next.js</span>
+        <span>Tailwind CSS</span>
+        <span>REST APIs</span>
+        <span>Git / GitHub</span>
+        <span>Figma</span>
+        <span>UX/UI</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experiência</h2>
+      <div class="timeline">
+        <div class="job">
+          <h3>Analista de Investimentos</h3>
+          <span>The5ers.com · Tempo integral · Jan 2025 – Presente (Remoto, Reino Unido)</span>
+          <p>
+            Atuação em uma das principais mesas proprietárias globais em commodities (Top 4), com foco em gestão de risco, análise quantitativa e estratégias baseadas em dados.
+          </p>
+          <ul>
+            <li>Gestão de investimentos e análise financeira avançada</li>
+            <li>Uso de programação para apoio à tomada de decisão</li>
+            <li>Automação de análises e estratégias quantitativas</li>
+            <li>Aplicação de IA para otimização de performance</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Desenvolvedor Frontend</h3>
+          <span>Freelancer · Out 2022 – Jun 2024</span>
+          <p>
+            Desenvolvimento de interfaces web para aplicações técnicas nas áreas de engenharia e finanças.
+          </p>
+          <ul>
+            <li>Criação de interfaces modernas com JavaScript e TypeScript</li>
+            <li>Integração com APIs e sistemas de dados</li>
+            <li>Versionamento e colaboração com Git</li>
+            <li>Foco em performance, clareza visual e usabilidade</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Diferenciais</h2>
+      <ul>
+        <li>Estética futurista e atenção a microinterações</li>
+        <li>Código limpo, organizado e escalável</li>
+        <li>Visão de produto e experiência do usuário</li>
+        <li>Alta autonomia e responsabilidade em projetos</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <p>
+        LinkedIn: <a href="https://www.linkedin.com/in/luis-heli-mozart/" target="_blank">linkedin.com/in/luis-heli-mozart</a>
+      </p>
+      <p>
+        Email: <em>luiszouzsa@gmail.com</em>
+      </p>
+      <p>
+        Telefone: <em>47 991442105</em>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 · Luis Heli Mozart · Frontend Developer
+  </footer>
+
+</body>
+</html>
